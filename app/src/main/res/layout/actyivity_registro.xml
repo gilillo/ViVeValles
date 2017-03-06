@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="Registrar"
+        android:id="@+id/btnRegistrar"
+
+        android:layout_marginBottom="136dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ima_btn_registrar_opt"/>
+
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextNombre"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnRegistrar"
+        android:layout_marginTop="49dp"
+        android:layout_alignLeft="@+id/btnRegistrar"
+        android:hint="Nombre" />
+
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextApellido"
+        android:layout_alignTop="@+id/editTextNombre"
+        android:layout_alignEnd="@+id/btnRegistrar"
+        android:layout_alignRight="@+id/btnRegistrar"
+        android:hint="Apellido" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextAlias"
+        android:layout_below="@+id/editTextNombre"
+        android:layout_alignEnd="@+id/editTextApellido"
+        android:layout_alignRight="@+id/editTextApellido"
+        android:hint="Alias" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPass"
+        android:layout_below="@+id/editTextAlias"
+        android:layout_alignStart="@+id/editTextAlias"
+        android:layout_alignLeft="@+id/editTextAlias"
+        android:hint="Contraseña" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextEmail"
+        android:layout_below="@+id/editTextPass"
+        android:layout_alignStart="@+id/editTextPass"
+        android:layout_alignLeft="@+id/editTextPass"
+        android:hint="Email" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextResidencia"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_alignLeft="@+id/editTextEmail"
+        android:hint="Código postal" />
+
+    <EditText
+        android:layout_width="93.3dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editTextEdad"
+        android:layout_below="@+id/editTextResidencia"
+        android:layout_alignStart="@+id/editTextResidencia"
+        android:layout_alignLeft="@+id/editTextResidencia"
+        android:hint="Edad"
+        android:inputType="number" />
+
+    <EditText
+        android:layout_width="93.3dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextEsta"
+        android:layout_alignTop="@+id/editTextEdad"
+        android:layout_centerHorizontal="true"
+        android:hint="Estatura" />
+
+    <EditText
+        android:layout_width="93.3dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editTextPeso"
+        android:layout_below="@+id/editTextResidencia"
+        android:layout_alignEnd="@+id/editTextResidencia"
+        android:layout_alignRight="@+id/editTextResidencia"
+        android:hint="Peso"
+        android:inputType="numberDecimal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_above="@+id/editTextApellido"
+        android:layout_toStartOf="@+id/editTextApellido"
+        android:layout_toLeftOf="@+id/editTextApellido" />
+
+</RelativeLayout>

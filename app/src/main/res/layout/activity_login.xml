@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:background="@drawable/fondo_opt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+
+
+
+<android.support.design.internal.ScrimInsetsFrameLayout
+    android:layout_width="300dp"
+    android:layout_height="60dp"
+    android:background="#ffffff"
+    android:alpha="0.7"
+    android:layout_above="@+id/btnLogin"
+    android:layout_alignTop="@+id/textView"
+    android:layout_alignRight="@+id/editTextContra"
+    android:layout_alignEnd="@+id/editTextContra">
+
+</android.support.design.internal.ScrimInsetsFrameLayout>
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+
+
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/editTextContra"
+        android:layout_alignStart="@+id/editTextContra"
+        android:layout_alignLeft="@+id/editTextContra"
+        android:src="@drawable/ima_bnt_login_opt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="¿Aun no tienes cuenta?"
+        android:id="@+id/textView3"
+        android:textSize="15dp"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignEnd="@+id/btnRegistro"
+        android:layout_alignRight="@+id/btnRegistro"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="Registrar"
+        android:id="@+id/btnRegistro"
+
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:src="@drawable/ima_btn_registro_opt"/>
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="132dp"
+        android:id="@+id/imageView"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Usuario"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/editTextUsuario"
+        android:layout_alignLeft="@+id/editTextUsuario" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Contraseña"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editTextUsuario"
+        android:layout_alignStart="@+id/editTextUsuario"
+        android:layout_alignLeft="@+id/editTextUsuario" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextContra"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/editTextUsuario"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/editTextContra"
+        android:layout_alignLeft="@+id/editTextContra"
+        android:inputType="textCapCharacters"/>
+
+
+</RelativeLayout>

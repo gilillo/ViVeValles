@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ruta"
+            android:icon="@drawable/ic_ruta"
+            android:title="@string/ruta"/>
+        <item
+            android:id="@+id/sitios"
+            android:icon="@drawable/ic_interes"
+            android:title="@string/sitios"/>
+        <item
+            android:id="@+id/comidas"
+            android:icon="@drawable/ic_restaurant"
+            android:title="@string/Comidas"/>
+
+        <item
+            android:id="@+id/reparacion"
+            android:icon="@drawable/ic_reparacion"
+            android:title="@string/Reparacion"/>
+        <item
+            android:id="@+id/wc"
+            android:icon="@drawable/ic_wc"
+            android:title="@string/wc"/>
+        <item
+            android:id="@+id/mas_cat"
+            android:title="MAS CATEGORIAS"
+            />
+    </group>
+<!--
+    <item
+        android:id="@+id/navigation_subheader"
+        android:title="@string/otras">
+        <menu>
+            <item
+                android:id="@+id/estadisticas"
+                android:icon="@drawable/ic_estadisticas"
+                android:title="@string/estadisticas"/>
+            <item
+                android:id="@+id/ir_a_web"
+                android:icon="@drawable/ic_galeria"
+                android:title="@string/galeria"/>
+        </menu>
+    </item>
+    -->
+</menu>
